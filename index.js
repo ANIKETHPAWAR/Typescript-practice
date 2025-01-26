@@ -1,10 +1,8 @@
 "use strict";
-function isLegal(age) {
-    if (age > 18) {
-        return "user is legal";
-    }
-    else {
-        return "user is underage";
-    }
+function Delaycall(Fn) {
+    setTimeout(Fn, 10000);
 }
-console.log(isLegal(21));
+function log() {
+    console.log("hi there");
+}
+Delaycall(log);
