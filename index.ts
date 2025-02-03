@@ -1,9 +1,5 @@
-function Delaycall(Fn:() => void){
-    setTimeout(Fn,10000)
+function greet(name:string):string{
+    return "Hello" + name
 }
 
-function log(){
-    console.log("hi there")
-}
-
-Delaycall(log)
+console.log(greet("aniketh"))

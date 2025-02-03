@@ -1,8 +1,5 @@
 "use strict";
-function Delaycall(Fn) {
-    setTimeout(Fn, 10000);
+function greet(name) {
+    return "Hello" + name;
 }
-function log() {
-    console.log("hi there");
-}
-Delaycall(log);
+console.log(greet("aniketh"));
