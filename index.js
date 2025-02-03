@@ -1,5 +1,9 @@
 "use strict";
-function greet(name) {
-    return "Hello" + name;
+class Manager {
+    constructor(name, age) {
+        this.name = name;
+        this.age = age;
+    }
 }
-console.log(greet("aniketh"));
+let user = new Manager("Aniketh", 20);
+console.log(user);
